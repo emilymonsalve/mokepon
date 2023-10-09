@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;600&display=swap');
+
+
+body {
+    font-family: 'Tektur', cursive;
+    background-image: url(./assets/bonito.png);
+        background-size: 396px;
+}
+
+
+.title {
+    color:black;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+
+#selccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+    color:black;
+    font-size: 30px;
+    margin-top: 50px
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 25px;
+}
+
+.tarjeta-de-mokepon {
+    width: 221px;
+    height: 155px;
+    background-color:transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.tarjeta-de-mokepon img {
+    width: 115px;
+}
+
+#boton-mascota {
+    width: 145px;
+    height: 28px;
+    border-radius: 15px;
+    border: 2px solid white;
+    font-family: 'Tektur', cursive;
+    margin-top: 3px;
+    background-color: black;
+    color: white;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: black;
+    color: white;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: transparent;
+    width: 80px;
+    color: black;
+    font-family: 'Tektur', cursive;
+    border: 2px solid black;
+}
+
+#mensajes {
+    width: 280px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+#boton-reiniciar {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: 'Tektur', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 256px;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataque-jugador, .ataque-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 28px;
+    border-radius: 15px;
+    font-family: 'Tektur', cursive;
+    margin: 10px 0;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 300px) {
+    #ver.mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
